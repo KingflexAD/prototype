@@ -1,0 +1,60 @@
+body {
+    margin: 10px;
+    padding: 8px;
+    background-image: url(bacckground-image\ \(1\).jpg);
+    overflow: hidden;
+    background-size: cover; /* Ensures the image covers the entire background */
+    /*background-position: center;  Cente rs the background image */
+    background-repeat: no-repeat;
+  }
+  .head{
+    position: sticky;
+    border-radius: 15px;
+    background-color: rgba(255, 166, 0, 0.462);
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter:blur(9px);
+}
+span{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.d2{
+    margin-right: 30px;
+}
+svg{
+    height: 40px;
+    width: 40px;
+}
+  .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }  
+  .reg-form{
+    max-width: 400px;
+    margin: 4rem auto;
+    background-color: rgba(246, 158, 51, 0.591);
+    backdrop-filter: blur(2px);
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 2px 0.5px rgb(184, 182, 185);
+    padding:8px;
+  }
+  .vert{
+    display: block;
+    padding:3px;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    width: 20rem;
+  }
+  .in{
+    height: 2.7rem;
+    margin-top:13px;
+  }
+
+
+ 

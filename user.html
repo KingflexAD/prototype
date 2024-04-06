@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function() {
+     $(".vert").click(function() {   
+    });
+    $('.in').click(function() {
+        $(this).toggleClass('transformed');
+      });
+    });
+</script>
+<style>
+   .btn{
+        display: block;
+        height: 100px;
+        width: 300px;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    button:hover{
+        transform:scale(1.08);
+        transition: 0.2s;
+    } 
+    #new{
+        background-color: rgb(246, 158, 51);
+        color: white;
+    }
+    #exist{
+        background-color: blanchedalmond;
+        color: rgb(246, 158, 51);
+    }
+</style>
+</head>
+<body>
+    <div class="d1">
+        <header class="head d-flex flex-wrap justify-content-center py-3 mb-4 ">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              <span>Study Buddy</span>
+            </a>
+            <div class="d2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </svg>
+            </div>
+            
+          </header>
+    </div>
+    <div class="container">
+        <div class="reg-form">
+            <form>
+                <label class="vert"for="username" >Username:</label>
+                <input class="vert" type="text" id="username" name="username" placeholder="Your name"required>
+                <label class="vert" for="email">Registration Id:</label>
+                <input class="vert" type="name" id="regid" name="regno" placeholder="xxxxxxxxxx">
+                <label class="vert" for="password">Password:</label>
+                <input class="vert" type="password" id="password" name="password" placeholder="Enter password">
+                <div class="singup">
+                  <input class="vert in" type="submit" value="Sign up">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
